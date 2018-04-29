@@ -1,2 +1,3 @@
 # rn-manager
-React Native manager app
+
+This is my first React Native App.

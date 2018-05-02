@@ -10,4 +10,6 @@ This app will use:
 - Native Base
 
 - Redux
+
+- React Navigation
 ```

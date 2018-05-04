@@ -12,4 +12,6 @@ This app will use:
 - Redux
 
 - React Navigation
+
+- Prettier
 ```

@@ -14,4 +14,6 @@ This app will use:
 - React Navigation
 
 - Prettier
+
+- Husky
 ```

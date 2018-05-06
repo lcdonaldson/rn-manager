@@ -1,14 +1,12 @@
-import React from 'react';
-import { Text, TouchableOpacity } from 'react-native';
-import styles from './styles';
+import React from "react";
+import { Text, TouchableOpacity } from "react-native";
+import styles from "./styles";
 
-const Button = (props) => {
+const Button = props => {
     const { text, onPress } = props;
     return (
         <TouchableOpacity style={styles.button} onPress={onPress}>
-            <Text style={styles.buttonText}>
-                {text}
-            </Text>
+            <Text style={styles.buttonText}>{text}</Text>
         </TouchableOpacity>
     );
 };
@@ -19,9 +17,9 @@ const Button = (props) => {
 // };
 
 Button.defaultProps = {
-    text: 'Button Text',
+    text: "Button Text",
     // eslint-disable-next-line no-console
-    onPress: () => console.log('Button Pressed'),
+    onPress: () => console.log("Button Pressed")
 };
 
 export default Button;

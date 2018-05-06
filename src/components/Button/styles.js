@@ -1,15 +1,15 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
     button: {
         paddingVertical: 10,
         paddingHorizontal: 20,
-        backgroundColor: 'green',
-        margin: 5,
+        backgroundColor: "green",
+        margin: 5
     },
     buttonText: {
-        color: '#fff',
+        color: "#fff",
         fontSize: 18,
-        fontWeight: '600',
-    },
+        fontWeight: "600"
+    }
 });

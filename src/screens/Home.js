@@ -1,21 +1,7 @@
 import React from "react";
-
 import { StyleSheet, Text, View } from "react-native";
 import Button from "../components/Button";
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
-    },
-    main: {
-        fontSize: 20,
-        textAlign: "center",
-        fontWeight: "400",
-        fontStyle: "italic"
-    }
-});
 
 const Home = props => {
     return (
@@ -32,5 +18,19 @@ const Home = props => {
 Home.propTypes = {
     navigation: React.PropTypes.object
 };
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    main: {
+        fontSize: 20,
+        textAlign: "center",
+        fontWeight: "400",
+        fontStyle: "italic"
+    }
+});
 
 export default Home;

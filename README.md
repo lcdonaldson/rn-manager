@@ -16,4 +16,6 @@ This app will use:
 - Prettier
 
 - Husky
+
+- Jest (unit testing only)
 ```

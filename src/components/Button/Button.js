@@ -11,14 +11,9 @@ const Button = props => {
     );
 };
 
-// Button.propTypes = {
-//     text: React.PropTypes.string,
-//     onPress: React.PropTypes.func,
-// };
 
 Button.defaultProps = {
     text: "Button Text",
-    // eslint-disable-next-line no-console
     onPress: () => console.log("Button Pressed")
 };
 

@@ -10,33 +10,36 @@ import {
     Right,
     Button,
     Icon,
-    Title
+    Title,
+    Card
 } from "native-base";
+import Home from '../src/screens/Home'
 
 export default class App extends Component {
     render() {
         return (
-            <Container>
-                <Header>
-                    <Left>
-                        <Button transparent>
-                            <Icon name="menu" />
-                        </Button>
-                    </Left>
-                    <Body>
-                        <Title>Manager</Title>
-                    </Body>
-                    <Right>
-                        <Button transparent>
-                            <Icon name="search" />
-                        </Button>
-                    </Right>
-                </Header>
+            <Home />
+            // <Container>
+            //     <Header>
+            //         <Left>
+            //             <Button transparent>
+            //                 <Icon name="menu" />
+            //             </Button>
+            //         </Left>
+            //         <Body>
+            //             <Title>Manager</Title>
+            //         </Body>
+            //         <Right>
+            //             <Button transparent>
+            //                 <Icon name="search" />
+            //             </Button>
+            //         </Right>
+            //     </Header>
 
-                <View style={styles.container}>
-                    <Text style={styles.welcome}>Welcome to React Native!</Text>
-                </View>
-            </Container>
+            //     <View style={styles.container}>
+            //         <Text style={styles.welcome}>Welcome to React Native!</Text>
+            //     </View>
+            // </Container>
         );
     }
 }

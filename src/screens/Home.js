@@ -16,7 +16,7 @@ const Home = props => {
                 <Grid>
                     <Text style={styles.title}>Manager</Text> 
                     <Row style={styles.row}>
-                        <TouchableOpacity style={styles.btnStyles} onPress={() => this.props.navigation.navigate('Auth')}>
+                        <TouchableOpacity style={styles.btnStyles} onPress={() => navigation.navigate('Auth')}>
                             <Text style={styles.textStyle}>Login</Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={styles.btnStyles}>

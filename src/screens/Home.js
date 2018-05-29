@@ -1,17 +1,9 @@
 import React from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import {
-    Container,
-    Header,
-    Left,
-    Body,
-    Right,
-    Button,
-    Icon,
-    Title,
+    Container, 
     Grid,
-    Row,
-    Col,
+    Row, 
     Content,
     Card
 } from 'native-base'; 
@@ -20,12 +12,11 @@ import {
 const Home = props => {
     return ( 
         <Container style={styles.container}>
-            <Card transparent style={{maxHeight: 150, borderColor: 'teal', backgroundColor: 'transparent'}}> 
+            <Card transparent style={styles.card}> 
                 <Grid>
-                    <Text style={styles.main}>Manager</Text>
-                        
-                    <Row style={{justifyContent: 'center', marginTop: 20, maxHeight: 40}}>
-                        <TouchableOpacity style={styles.btnStyles}>
+                    <Text style={styles.title}>Manager</Text> 
+                    <Row style={styles.row}>
+                        <TouchableOpacity style={styles.btnStyles} onPress={() => this.props.navigation.navigate('Auth')}>
                             <Text style={styles.textStyle}>Login</Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={styles.btnStyles}>
@@ -34,24 +25,31 @@ const Home = props => {
                     </Row> 
                 </Grid>  
             </Card>
-
         </Container>
     );
 };
 
 const styles = StyleSheet.create({ 
     container: {
-        backgroundColor: 'teal',
         flex: 1,
-        justifyContent: 'center'
+        justifyContent: 'center',
+        backgroundColor: 'teal',
     },
-    main: {
-        fontSize: 40,
-        marginTop: 30,
-        color: '#fff',
+    card: {
+        maxHeight: 150, 
+        borderColor: 'teal', 
+        backgroundColor: 'transparent',
+    },
+    title: {
+        fontSize: 40, 
         textAlign: "center",
         fontWeight: "400",
-        fontStyle: "italic",
+        color: '#fff',  
+    },
+    row: {
+        marginTop: 20, 
+        maxHeight: 40,
+        justifyContent: 'center', 
     },
     btnStyles: {
         width: 80,

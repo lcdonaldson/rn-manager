@@ -1,64 +1,42 @@
 
 import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
-// import Button from '../src/components/Button';
-import {
-    Container,
-    Header,
-    Left,
-    Body,
-    Right,
-    Button,
-    Icon,
-    Title,
-    Card
-} from "native-base";
-import Home from '../src/screens/Home'
+import { StackNavigator } from 'react-navigation';
+import Home from '../src/screens/Home';
+import Auth from '../src/screens/Auth';
 
-export default class App extends Component {
+class HomeScreen extends React.Component {
     render() {
         return (
-            <Home />
-            // <Container>
-            //     <Header>
-            //         <Left>
-            //             <Button transparent>
-            //                 <Icon name="menu" />
-            //             </Button>
-            //         </Left>
-            //         <Body>
-            //             <Title>Manager</Title>
-            //         </Body>
-            //         <Right>
-            //             <Button transparent>
-            //                 <Icon name="search" />
-            //             </Button>
-            //         </Right>
-            //     </Header>
+            <Home/>
+        );
+    }  
+}
 
-            //     <View style={styles.container}>
-            //         <Text style={styles.welcome}>Welcome to React Native!</Text>
-            //     </View>
-            // </Container>
+class AuthScreen extends React.Component {
+    render(){
+        return (
+            <Auth/>
         );
     }
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "#F5FCFF"
+const RootStack = StackNavigator(
+    {
+        Home: {
+            screen: HomeScreen,
+        },
+        Auth: {
+            screen: AuthScreen
+        }
     },
-    welcome: {
-        fontSize: 20,
-        textAlign: "center",
-        marginTop: 10
-    },
-    instructions: {
-        textAlign: "center",
-        color: "#333333",
-        marginBottom: 5
+    {
+        initialRouteName: 'Home',
     }
-});
+);
+
+export default class App extends React.Component {
+    render() {
+        return <RootStack />;
+    }
+}
+

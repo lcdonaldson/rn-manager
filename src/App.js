@@ -24,7 +24,7 @@ class HomeScreen extends React.Component {
                             <TouchableOpacity style={styles.btnStyles} onPress={() => this.props.navigation.navigate('Auth')}>
                                 <Text style={styles.textStyle}>Login</Text>
                             </TouchableOpacity>
-                            <TouchableOpacity style={styles.btnStyles}>
+                            <TouchableOpacity style={styles.btnStyles} onPress={() => this.props.navigation.navigate('SignUp')}>
                                 <Text style={styles.textStyle}>Sign Up</Text>
                             </TouchableOpacity>
                         </Row>
@@ -46,6 +46,16 @@ class AuthScreen extends React.Component {
     }
 }
 
+class SignUpScreen extends React.Component {
+    render() {
+        return ( 
+            <Container style={styles.container}>
+                <Text style={styles.title}> Sign Up Screen </Text>
+            </Container>
+        );
+    }
+}
+
 const RootStack = StackNavigator(
     {
         Home: {
@@ -53,6 +63,9 @@ const RootStack = StackNavigator(
         },
         Auth: {
             screen: AuthScreen
+        },
+        SignUp: {
+            screen: SignUpScreen
         }
     },
     {

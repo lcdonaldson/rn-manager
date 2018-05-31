@@ -1,14 +1,7 @@
-
 import React, { Component } from "react";
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
-import { StackNavigator } from 'react-navigation';
-import {
-    Container,
-    Grid,
-    Row,
-    Content,
-    Card
-} from 'native-base'; 
+import { StackNavigator } from "react-navigation";
+import { Container, Grid, Row, Content, Card } from "native-base";
 // import Home from '../src/screens/Home';
 // import Auth from '../src/screens/Auth';
 
@@ -21,10 +14,20 @@ class HomeScreen extends React.Component {
                     <Grid>
                         <Text style={styles.title}>Manager</Text>
                         <Row style={styles.row}>
-                            <TouchableOpacity style={styles.btnStyles} onPress={() => this.props.navigation.navigate('Auth')}>
+                            <TouchableOpacity
+                                style={styles.btnStyles}
+                                onPress={() =>
+                                    this.props.navigation.navigate("Auth")
+                                }
+                            >
                                 <Text style={styles.textStyle}>Login</Text>
                             </TouchableOpacity>
-                            <TouchableOpacity style={styles.btnStyles} onPress={() => this.props.navigation.navigate('SignUp')}>
+                            <TouchableOpacity
+                                style={styles.btnStyles}
+                                onPress={() =>
+                                    this.props.navigation.navigate("SignUp")
+                                }
+                            >
                                 <Text style={styles.textStyle}>Sign Up</Text>
                             </TouchableOpacity>
                         </Row>
@@ -32,11 +35,11 @@ class HomeScreen extends React.Component {
                 </Card>
             </Container>
         );
-    }  
+    }
 }
 
 class AuthScreen extends React.Component {
-    render(){
+    render() {
         return (
             // <Auth/>
             <Container style={styles.container}>
@@ -48,7 +51,7 @@ class AuthScreen extends React.Component {
 
 class SignUpScreen extends React.Component {
     render() {
-        return ( 
+        return (
             <Container style={styles.container}>
                 <Text style={styles.title}> Sign Up Screen </Text>
             </Container>
@@ -59,7 +62,7 @@ class SignUpScreen extends React.Component {
 const RootStack = StackNavigator(
     {
         Home: {
-            screen: HomeScreen,
+            screen: HomeScreen
         },
         Auth: {
             screen: AuthScreen
@@ -69,31 +72,31 @@ const RootStack = StackNavigator(
         }
     },
     {
-        initialRouteName: 'Home',
+        initialRouteName: "Home"
     }
 );
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
-        backgroundColor: 'teal',
+        justifyContent: "center",
+        backgroundColor: "teal"
     },
     card: {
         maxHeight: 150,
-        borderColor: 'teal',
-        backgroundColor: 'transparent',
+        borderColor: "teal",
+        backgroundColor: "transparent"
     },
     title: {
         fontSize: 40,
         textAlign: "center",
         fontWeight: "400",
-        color: '#fff',
+        color: "#fff"
     },
     row: {
         marginTop: 20,
         maxHeight: 40,
-        justifyContent: 'center',
+        justifyContent: "center"
     },
     btnStyles: {
         width: 80,
@@ -104,8 +107,8 @@ const styles = StyleSheet.create({
         alignItems: "center"
     },
     textStyle: {
-        color: '#fff',
-        fontWeight: 'bold'
+        color: "#fff",
+        fontWeight: "bold"
     }
 });
 
@@ -114,4 +117,3 @@ export default class App extends React.Component {
         return <RootStack />;
     }
 }
-

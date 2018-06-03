@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import { StackNavigator } from "react-navigation";
-import { Container, Grid, Row, Content, Card } from "native-base";
+import { Container, Grid, Row, Content, Card, Form, Label, Item, Input, Button} from "native-base";
 // import Home from '../src/screens/Home';
 // import Auth from '../src/screens/Auth';
 
@@ -44,6 +44,17 @@ class AuthScreen extends React.Component {
             // <Auth/>
             <Container style={styles.container}>
                 <Text style={styles.title}> Auth Screen </Text>
+                    <Form style={styles.form}>
+                        <Item rounded style={styles.spc}>
+                            <Input placeholder="Username"/>
+                        </Item>
+                        <Item rounded last style={styles.spc}>
+                            <Input placeholder="Password"/>
+                        </Item>
+                        <Button block success rounded style={styles.spc}>
+                            <Text style={styles.textStyle}>Submit</Text>
+                        </Button>
+                    </Form>
             </Container>
         );
     }
@@ -61,7 +72,7 @@ class SignUpScreen extends React.Component {
 
 const RootStack = StackNavigator(
     {
-        Home: {
+        Home: { 
             screen: HomeScreen
         },
         Auth: {
@@ -92,7 +103,7 @@ const styles = StyleSheet.create({
         textAlign: "center",
         fontWeight: "400",
         color: "#fff"
-    },
+    }, 
     row: {
         marginTop: 20,
         maxHeight: 40,
@@ -109,6 +120,20 @@ const styles = StyleSheet.create({
     textStyle: {
         color: "#fff",
         fontWeight: "bold"
+    },
+    submit: {
+        borderRadius: 30,
+        padding: 20,
+        justifyContent: 'center', 
+        backgroundColor: '#fff',
+        color: "teal",
+    },
+    spc: {
+        marginVertical: 10,
+        paddingHorizontal: 10,
+    },
+    form: {
+        paddingHorizontal: 20
     }
 });
 

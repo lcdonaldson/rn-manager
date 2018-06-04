@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import { StackNavigator } from "react-navigation";
 import { Container, Grid, Row, Content, Card, Form, Label, Item, Input, Button} from "native-base";
-// import Home from '../src/screens/Home';
-// import Auth from '../src/screens/Auth';
 
 class HomeScreen extends React.Component {
     render() {

@@ -18,4 +18,6 @@ This app will use:
 - Husky
 
 - Jest (unit testing only)
+
+- CSS Grid
 ```

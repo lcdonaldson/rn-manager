@@ -122,8 +122,8 @@ const styles = StyleSheet.create({
     submit: {
         borderRadius: 30,
         padding: 20,
-        justifyContent: 'center', 
-        backgroundColor: '#fff',
+        justifyContent: "center", 
+        backgroundColor: "#fff",
         color: "teal",
     },
     spc: {

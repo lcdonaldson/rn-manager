@@ -17,7 +17,7 @@ This app will use:
 
 - Husky
 
-- Jest (unit testing only)
+- Jest (unit testing and snapshots only)
 
 - CSS Grid
 ```

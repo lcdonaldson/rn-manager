@@ -4,7 +4,7 @@ import { TouchableOpacity, ActivityIndicator} from 'react-native';
 class Loader extends React.Component {
     render() {
         return (
-            <View>
+            <View style={styles.container}>
                 <TouchableOpacity>
                     <ActivityIndicator />
                 </TouchableOpacity> 
@@ -12,3 +12,11 @@ class Loader extends React.Component {
         )
     }
 }
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#00000060,',
+    }
+})

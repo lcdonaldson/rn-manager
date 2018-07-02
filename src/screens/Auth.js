@@ -1,10 +1,12 @@
 import React from "react";
 import { StyleSheet, Text } from "react-native";
 import { Container } from "native-base";
+import Loader from '../components/common/Loader/Loader';
 
 const Auth = props => (
     <Container style={styles.container}>
         <Text style={styles.title}> Auth Screen </Text>
+        <Loader />
     </Container>
 );
 

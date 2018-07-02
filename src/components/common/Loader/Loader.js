@@ -4,10 +4,9 @@ import { TouchableOpacity, ActivityIndicator} from 'react-native';
 class Loader extends React.Component {
     render() {
         return (
-            <View style={styles.container}>
-                <TouchableOpacity>
-                    <ActivityIndicator />
-                </TouchableOpacity> 
+            <View style={styles.container}> 
+                <ActivityIndicator />
+                <TouchableOpacity />  
             </View>        
         )
     }

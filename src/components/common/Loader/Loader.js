@@ -6,7 +6,7 @@ class Loader extends React.Component {
         return (
             <View style={styles.container}> 
                 <ActivityIndicator color={'#fff'} size={large}/>
-                <TouchableOpacity />  
+                <TouchableOpacity style={styles.cancelBtn}/>  
             </View>        
         )
     }
@@ -17,5 +17,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#00000060,',
+    },
+    cancelBtn: {
+    
     }
 })

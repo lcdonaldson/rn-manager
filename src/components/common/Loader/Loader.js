@@ -5,7 +5,7 @@ class Loader extends React.Component {
     render() {
         return (
             <View style={styles.container}> 
-                <ActivityIndicator color={'#fff'}/>
+                <ActivityIndicator color={'#fff'} size={large}/>
                 <TouchableOpacity />  
             </View>        
         )

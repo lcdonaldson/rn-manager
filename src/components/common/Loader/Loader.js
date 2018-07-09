@@ -1,24 +1,15 @@
 import React, { Component } from 'react';
 import { TouchableOpacity, ActivityIndicator} from 'react-native';
+import styles from "./styles.js";
 
 class Loader extends React.Component {
     render() {
         return (
-            <View style={styles.container}> 
+            <View style={styles.loaderLayout}> 
                 <ActivityIndicator color={'#fff'} size={large}/>
-                <TouchableOpacity style={styles.cancelBtn}/>  
+                <TouchableOpacity style={styles.cancelBtn} text={'Cancel'} />  
             </View>        
         )
     }
 }
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: '#00000060,',
-    },
-    cancelBtn: {
-    
-    }
-})
+

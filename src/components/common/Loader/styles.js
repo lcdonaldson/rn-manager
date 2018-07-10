@@ -9,7 +9,10 @@ export default StyleSheet.create({
         backgroundColor: '#00000060,',
     },
     cancelBtn: {
-        padding: 10,
+        paddingTop: 10,
+        paddingBottom: 10,
+        paddingLeft: 30,
+        paddingRight: 30
     }
     
 })

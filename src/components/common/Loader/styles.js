@@ -14,6 +14,7 @@ export default StyleSheet.create({
         paddingLeft: 30,
         paddingRight: 30,
         color: '#fff',
+        backgroundColor: "teal",
     }
     
 })

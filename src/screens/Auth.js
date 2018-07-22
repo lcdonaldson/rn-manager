@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Text } from "react-native";
-import { Container, Content, Form, Item, Input } from "native-base";
+import { Container, Content, Form, Item, Input, Button } from "native-base";
 import Loader from '../components/common/Loader/Loader';
 
 const Auth = props => (
@@ -14,6 +14,9 @@ const Auth = props => (
                 <Item last>
                     <Input placeholder="Password" />
                 </Item>
+                <Button block primary onPress= "">
+                    <Text>Submit</Text>
+                </Button>
             </Form>
             <Loader />
         </Content>

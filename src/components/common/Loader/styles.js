@@ -6,7 +6,7 @@ export default StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#00000060,',
+        backgroundColor: 'rgba(0, 0, 0, 0.80)',
     },
     cancelBtn: {
         paddingTop: 10,

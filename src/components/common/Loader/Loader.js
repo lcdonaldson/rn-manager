@@ -6,7 +6,7 @@ class Loader extends React.Component {
     render() {
         return (
             <View style={styles.loaderLayout}> 
-                <ActivityIndicator color={'#fff'} size={large}/>
+                <ActivityIndicator color={'#ffffff'} size={large}/>
                 <TouchableOpacity style={styles.cancelBtn} text={'Cancel'} />  
             </View>        
         )

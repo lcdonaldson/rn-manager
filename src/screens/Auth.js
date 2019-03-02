@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
         fontSize: 40,
         textAlign: "center",
         fontWeight: "400",
-        color: "#fff"
+        color: "#FFF"
     },
 
     btnStyles: {
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     },
 
     textStyle: {
-        color: "#fff",
+        color: "#FFF",
         fontWeight: "bold"
     }
 });

@@ -13,15 +13,15 @@ import Home from './screens/Home';
 // import { Container, Grid, Row, Content, Card, Form, Label, Item, Input, Button} from "native-base";
 
 export default class App extends Component {
-    // componentWillMount () {
-    //     const config = {
-    //         apiKey: "AFakeKey",
-    //         authDomain: "manager-bffb6.firebaseapp.com",
-    //         databaseURL: "https://manager-bffb6.firebaseio.com",
-    //         projectId: "manager-bffb6",
-    //         storageBucket: "manager-bffb6.appspot.com",
-    //         messagingSenderId: "377920201708"
-    //     };
+    componentWillMount () {
+        const config = {
+            apiKey: "AFakeKey",
+            authDomain: "manager-bffb6.firebaseapp.com",
+            databaseURL: "https://manager-bffb6.firebaseio.com",
+            projectId: "manager-bffb6",
+            storageBucket: "manager-bffb6.appspot.com",
+            messagingSenderId: "377920201708"
+        };
 
     //     firebase.initializeApp(config);
     // }

@@ -13,7 +13,7 @@ import Auth from './components/common/Auth/Auth';
 export default class App extends Component {
     componentWillMount () {
         const config = {
-            apiKey: "SomeFakeKey",
+            apiKey: "AFakeKey",
             authDomain: "manager-bffb6.firebaseapp.com",
             databaseURL: "https://manager-bffb6.firebaseio.com",
             projectId: "manager-bffb6",

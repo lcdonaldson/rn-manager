@@ -17,10 +17,8 @@ function setup(type) {
 describe("Loader component", () => {
   let setupComponent;
   let wrapper;
-
-  expect( 1 + 1 ).toEqual(2);
   
-  it("Snapshot Tests", () => {
+  it("snapshot tests should match wrapper", () => {
     setupComponent = setup();
     wrapper = setupComponent.enzymeWrapper;
 

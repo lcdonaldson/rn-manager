@@ -19,3 +19,26 @@ This app will use:
 
 - Jest (unit testing and snapshots only)
 ```
+
+{/* <Container style={styles.container}>
+    <Card transparent style={styles.card}>
+        <Grid>
+            <Text style={styles.title}>Manager</Text>
+            <Row style={styles.row}>
+                <TouchableOpacity
+                    style={styles.btnStyles}
+                    onPress={() => this.props.navigation.navigate("Auth")}
+                >
+                    <Text style={styles.textStyle}>Login</Text>
+                </TouchableOpacity>
+                <View style={{minWidth: 15}}/>
+                <TouchableOpacity
+                    style={styles.btnStyles}
+                    onPress={() => this.props.navigation.navigate("SignUp")}
+                >
+                    <Text style={styles.textStyle}>Sign Up</Text>
+                </TouchableOpacity>
+            </Row>
+        </Grid>
+    </Card>
+</Container> */}

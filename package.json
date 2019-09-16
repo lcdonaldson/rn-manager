@@ -10,16 +10,18 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "firebase": "^5.8.5",
     "jest-cli": "^23.4.1",
     "native-base": "^2.7.1",
     "react": "16.4.1",
     "react-dom": "^16.4.1",
-    "react-native": "^0.56.0",
+    "react-native": "^0.57.0",
     "react-navigation": "^2.0.4",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0"
   },
   "devDependencies": {
+    "@babel/plugin-external-helpers": "^7.2.0",
     "babel-jest": "22.4.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react-native": "4.0.0",
@@ -32,13 +34,20 @@
     "eslint-plugin-react": "^7.8.2",
     "jest": "22.4.4",
     "jest-cli": "git://github.com/hankhsiao/jest.git",
+    "metro-react-native-babel-preset": "^0.51.1",
     "prettier": "^1.12.1",
     "react-test-renderer": "16.3.1",
+<<<<<<< HEAD
+    "schedule": "0.4.0"
+=======
     "ws": ">=3.3.1"
+>>>>>>> master
   },
   "jest": {
     "preset": "react-native",
     "collectCoverage": true,
-    "collectCoverageFrom": ["src/**/*.{js,jsx}"]
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ]
   }
 }

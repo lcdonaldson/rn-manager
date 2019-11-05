@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import firebase from 'firebase';
+// import firebase from 'firebase';
 import reducers from './reducers';
 import Auth from './components/common/Auth/Auth';
+import TestScreen from './screens/TestScreen';
 
 // import { emailChanged } from './actions';
 // import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
@@ -11,23 +12,24 @@ import Auth from './components/common/Auth/Auth';
 // import { Container, Grid, Row, Content, Card, Form, Label, Item, Input, Button} from "native-base";
 
 export default class App extends Component {
-    componentWillMount () {
-        const config = {
-            apiKey: "AFakeKey",
-            authDomain: "manager-bffb6.firebaseapp.com",
-            databaseURL: "https://manager-bffb6.firebaseio.com",
-            projectId: "manager-bffb6",
-            storageBucket: "manager-bffb6.appspot.com",
-            messagingSenderId: "377920201708"
-        };
+    // componentWillMount () {
+    //     const config = {
+    //         apiKey: "AFakeKey",
+    //         authDomain: "manager-bffb6.firebaseapp.com",
+    //         databaseURL: "https://manager-bffb6.firebaseio.com",
+    //         projectId: "manager-bffb6",
+    //         storageBucket: "manager-bffb6.appspot.com",
+    //         messagingSenderId: "377920201708"
+    //     };
 
-        firebase.initializeApp(config);
-    }
+    //     firebase.initializeApp(config);
+    // }
 
     render() {
         return (
             <Provider store={createStore(reducers)}>
-                <Auth/>
+                {/* <Auth/> */}
+                <TestScreen/>
             </Provider>
         );
     }

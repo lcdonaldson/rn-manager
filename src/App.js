@@ -5,6 +5,7 @@ import { createStore } from 'redux';
 import reducers from './reducers';
 import Auth from './components/common/Auth/Auth';
 import TestScreen from './screens/TestScreen';
+import Home from './screens/Home';
 
 // import { emailChanged } from './actions';
 // import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
@@ -29,7 +30,8 @@ export default class App extends Component {
         return (
             <Provider store={createStore(reducers)}>
                 {/* <Auth/> */}
-                <TestScreen/>
+                {/* <TestScreen/> */}
+                <Home/>
             </Provider>
         );
     }

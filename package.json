@@ -10,6 +10,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@hapi/cryptiles": "^4.2.1",
     "firebase": "^5.8.5",
     "jest-cli": "^23.4.1",
     "merge": "^1.2.1",

@@ -719,6 +719,22 @@
   version "0.2.19"
   resolved "https://registry.yarnpkg.com/@firebase/webchannel-wrapper/-/webchannel-wrapper-0.2.19.tgz#991df31d892a51414e0e544b5cff4216cfb04915"
 
+"@hapi/boom@7.x.x":
+  version "7.4.11"
+  resolved "https://registry.yarnpkg.com/@hapi/boom/-/boom-7.4.11.tgz#37af8417eb9416aef3367aa60fa04a1a9f1fc262"
+  dependencies:
+    "@hapi/hoek" "8.x.x"
+
+"@hapi/cryptiles@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@hapi/cryptiles/-/cryptiles-4.2.1.tgz#ff0f18d79074659838caedbb911851313ad1ffbc"
+  dependencies:
+    "@hapi/boom" "7.x.x"
+
+"@hapi/hoek@8.x.x":
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-8.5.0.tgz#2f9ce301c8898e1c3248b0a8564696b24d1a9a5a"
+
 "@types/node@*":
   version "10.12.21"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.21.tgz#7e8a0c34cf29f4e17a36e9bd0ea72d45ba03908e"
@@ -4510,16 +4526,9 @@ js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
 
-js-yaml@^3.7.0, js-yaml@^3.9.1:
-  version "3.11.0"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.11.0.tgz#597c1a8bd57152f26d622ce4117851a51f5ebaef"
-  dependencies:
-    argparse "^1.0.7"
-    esprima "^4.0.0"
-
-js-yaml@^3.9.0:
-  version "3.12.1"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.12.1.tgz#295c8632a18a23e054cf5c9d3cecafe678167600"
+js-yaml@^3.13.1, js-yaml@^3.7.0, js-yaml@^3.9.0, js-yaml@^3.9.1:
+  version "3.13.1"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"

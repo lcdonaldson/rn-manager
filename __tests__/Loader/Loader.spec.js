@@ -1,27 +1,11 @@
 import React from "react";
-
-import Enzyme, {shallow} from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
-
-Enzyme.configure({ adapter: new Adapter() });
-
-function setup(type) {
-  const props = {};
-  let enzymeWrapper;
-  
-  return {
-    enzymeWrapper
-  }
-}
+import 'react-native';
+import render from 'react-test-renderer';
+import Loader from '../../src/components/common/Loader/Loader';
 
 describe("Loader component", () => {
-  let setupComponent;
-  let wrapper;
-  
   it("snapshot tests should match wrapper", () => {
-    setupComponent = setup();
-    wrapper = setupComponent.enzymeWrapper;
-
-    expect(wrapper).toMatchSnapshot();
-  })
+    const tree = render.create(<Loader/>).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 })

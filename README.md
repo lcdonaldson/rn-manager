@@ -7,15 +7,15 @@ This app will use:
 ``` 
 - React Native
 
-- Native Base
+- Component Libraries
 
-- Redux
+- State management
 
-- React Navigation
+- Mobile Navigation
 
 - Prettier
 
 - Husky
 
-- Jest (unit testing and snapshots only)
+- Unit Testing
 ```

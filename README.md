@@ -11,7 +11,7 @@ This app will use:
 
 - State management
 
-- Mobile Navigation
+- Stack and Drawer Navigation
 
 - Prettier
 

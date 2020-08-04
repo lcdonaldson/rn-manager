@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
         fontSize: 40,
         textAlign: "center",
         fontWeight: "400",
-        color: "#fff"
+        color: "#ffffff"
     },
     row: {
         marginTop: 20,

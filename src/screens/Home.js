@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
         backgroundColor: "teal"
     },
     card: {
+        marginBottom: 250,
         maxHeight: 150,
         borderColor: "teal",
         backgroundColor: "transparent"
@@ -38,7 +39,7 @@ const styles = StyleSheet.create({
         fontSize: 40,
         textAlign: "center",
         fontWeight: "400",
-        color: "#fff"
+        color: "#ffffff"
     },
     row: {
         marginTop: 20,
@@ -46,16 +47,18 @@ const styles = StyleSheet.create({
         justifyContent: "center"
     },
     btnStyles: {
-        width: 80,
-        padding: 10,
+        width: 120,
+        padding: 5,
         borderRadius: 20,
         marginHorizontal: 10,
+        minHeight: 40,
         backgroundColor: "#00b386",
         alignItems: "center"
     },
     textStyle: {
         color: "#fff",
-        fontWeight: "bold"
+        fontWeight: "bold",
+        fontSize: 18
     }
 });
 

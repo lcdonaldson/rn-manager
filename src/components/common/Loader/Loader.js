@@ -10,11 +10,7 @@ class Loader extends Component {
     render() {
         return (
             <View style={styles.loaderLayout}> 
-<<<<<<< HEAD
                 <ActivityIndicator color={'#fff'} size="large"/>
-=======
-                <ActivityIndicator color={'#ffffff'} size={large}/>
->>>>>>> master
                 <TouchableOpacity style={styles.cancelBtn} text={'Cancel'} />  
             </View>        
         )

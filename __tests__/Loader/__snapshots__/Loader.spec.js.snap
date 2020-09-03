@@ -1,3 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Loader component Snapshot Tests 1`] = `undefined`;
+exports[`Loader component snapshot tests should match wrapper 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="#fff"
+    hidesWhenStopped={true}
+    size="large"
+  />
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "teal",
+        "color": "#fff",
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 30,
+        "paddingRight": 30,
+        "paddingTop": 10,
+      }
+    }
+  />
+</View>
+`;

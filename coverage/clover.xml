@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1591765269545" clover="3.2.0">
-  <project timestamp="1591765269546" name="All files">
+<coverage generated="1596071083234" clover="3.2.0">
+  <project timestamp="1596071083235" name="All files">
     <metrics statements="7" coveredstatements="7" conditionals="69" coveredconditionals="41" methods="20" coveredmethods="15" elements="96" coveredelements="63" complexity="0" loc="7" ncloc="7" packages="1" files="1" classes="1">
       <file name="Loader.js" path="/Users/Levi/Desktop/CODE/code_practice/ReactNative/manager/src/components/common/Loader/Loader.js">
         <metrics statements="7" coveredstatements="7" conditionals="69" coveredconditionals="41" methods="20" coveredmethods="15"/>

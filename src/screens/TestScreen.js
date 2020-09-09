@@ -1,15 +1,21 @@
 import React from "react";
-import { StyleSheet, Text } from "react-native";
+import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import { Container, Content, Form, Item, Input, Button } from "native-base";
 import Loader from '../components/common/Loader/Loader';
 
+export const goTo = () => {
+    let x = 2;
+    let y = 3;
+    let z = y + x
+
+    return z;
+}
+
 const TestScreen = props => (
-    // goTo = () => {
-    //     this.props.navigation.navigate('Home');
-    // }
     
     <Container style={styles.container}>
         <Content>
+            <TouchableOpacity onPress={() => goTo()}/>
             <Text style={styles.title}> Test Screen </Text>
         </Content>
     </Container>

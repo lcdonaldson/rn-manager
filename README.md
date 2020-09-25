@@ -1,6 +1,6 @@
 # rn-manager
 
-This comes from a tutorial on udemy.
+The idea for this project comes from a tutorial on udemy and I have modified it a little bit.
 
 While the development can and will change as it unfolds,
 The plan at this time is to use the following:

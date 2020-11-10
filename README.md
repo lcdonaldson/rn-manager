@@ -5,7 +5,7 @@ The idea for this project comes from a tutorial on udemy and I have modified it 
 While the development can and will change as it unfolds,
 The plan at this time is to use the following:
 
-Current project is broken in this state. Needs upgrading to continue
+Current project is broken in this state. Needs upgrading to continue. This may result in sunsetting this repo and starting over.
 ``` 
 - React Native
 

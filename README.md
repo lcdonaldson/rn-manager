@@ -1,10 +1,11 @@
 # rn-manager
 
-This comes from a tutorial from udemy. This app will make it easier for organizations to manage their instructors or teachers absences. This way the manager can plan more effectively for substitutes and report problems. However, encountering problems with version upkeep. Various security fixes are needed to stay current. Hopefully there will be more stable versions of this in the future.
+The idea for this project comes from a tutorial on udemy and I have modified it a little bit.
 
 While the development can and will change as it unfolds,
 The plan at this time is to use the following:
 
+Current project is broken in this state. Needs upgrading to continue. This may result in sunsetting this repo and starting over.
 ``` 
 - React Native
 

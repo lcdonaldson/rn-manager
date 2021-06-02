@@ -5,7 +5,8 @@
 The idea for this project came from a tutorial on udemy and I have modified it a little bit.
 
 While the development can and will change as it unfolds,
-The plan at this time is to use the following:
+
+the plan at this time is to use the following:
 
 Current project is broken in this state. Needs upgrading to continue. This will result in sunsetting this repo and starting over.
 ``` 
